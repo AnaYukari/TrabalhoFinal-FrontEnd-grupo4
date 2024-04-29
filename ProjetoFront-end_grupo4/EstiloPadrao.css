@@ -1,3 +1,24 @@
-body{
-    background-color: #BAE5B3 ;
+.menu {
+    background-color: #1C6810;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.botao {
+    margin: 0.2em;
+    background-color: #6f855f98;
+    opacity: 47%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    width: 280px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 35px;
 }

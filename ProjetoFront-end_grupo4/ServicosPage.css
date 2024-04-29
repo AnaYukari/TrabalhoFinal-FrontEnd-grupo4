@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#serraTurismo {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 20em;
+}
+
+#onibus {
+    width: 100%;
+    height: 100%; 
+    vertical-align: middle;
+}
+
+body{
+    background-color: #BAE5B3 ;
+    text-align: center;
+    font-family: 'Poppins';
+    height: 100vh;
+}
+
+.imagemOnibus {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+}
+
+.titulo {
+    margin: 1em;
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1322px;
+    margin: 5%;
+    margin-left: 18%;
+}
+
+#imagemContainer {
+    width: 636px;
+    border-radius: 10px;
+}
+
+.container > p {
+    align-self: center;
+    font-size: 20px;
+}
+
+.textoContainer {
+    margin: 3em;
+}
+
+.textoContainer > .titulo {
+    align-self: flex-start;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
