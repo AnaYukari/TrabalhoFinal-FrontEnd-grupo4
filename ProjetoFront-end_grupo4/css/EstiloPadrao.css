@@ -68,7 +68,7 @@ a {
 
 .imagemBanner {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     vertical-align: middle;
 }
 
@@ -76,7 +76,7 @@ a {
     width: 100%;
     height: 80vh;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #serraTurismo {
@@ -102,3 +102,55 @@ a {
     justify-content: center;
     margin: 2em;
 }
+.footer_reserveViagem {
+    background-color: #85C5D9;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.imgFooter_reserveViagem {
+    padding-top: .7%;
+    width: 60%;
+    height: auto;
+
+}
+
+.tituloFooter_reserveViagem {
+    position: absolute;
+    font-size: 40px;
+    top: 30%;
+    left: 22%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.botaoReserveViagem{
+    position: absolute;
+    top: 70%;
+    left: 61%;
+    background-color: #3300FF;
+    border-color: #3300FF;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.botaoReserveViagem:hover {
+    background-color: #4c4cff;
+    border-color: #4c4cff;
+}
+.divInputFooter_reserveViagem {
+    width: 20px;
+    position: absolute;
+    top: 35%;
+    left: 58.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.InputFooter_reserveViagem{
+    margin: 25%;
+    border-radius: 50px;
+    padding-left: 40%;
+}
+
