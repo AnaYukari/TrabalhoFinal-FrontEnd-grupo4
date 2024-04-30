@@ -25,24 +25,19 @@ body{
 .botao {
     display: flex;
     justify-content: center;
-    margin: 0.2em 0.5em 0.2em 0.5em ;
+    flex-direction: row;
+    align-items: center;
+    margin:  0.1% 0.5% 0.1% 0.5% ;
     background-color: #306725;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 24px;
     width: 280px;
-    border-radius: 16px;
-    text-align: center;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: black;
     font-weight: 600;
     border-radius: 35px;
-    padding: 0.2em;
     transition: transform 0.2s ease;
 }
 
 .Icone {
-    margin-top: 0.2em;
     color: white;
     opacity: 100%;
 }
@@ -50,6 +45,7 @@ body{
 .botao > p {
     color: white;
     margin-left: 0.8em;
+    margin-top: 0.7em;
 }
 
 a {
@@ -84,21 +80,9 @@ a {
     display: flex;
     justify-content: flex-start;
     width: 20em;
-}
-
-.imagemLink {
-    margin: 1em;
     transition: transform 0.2s ease;
 }
 
-.imagemLink:hover {
+#serraTurismo:hover{
     transform: scale(1.1);
-}
-
-.imagens {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2em;
 }
