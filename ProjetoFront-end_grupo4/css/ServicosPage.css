@@ -1,29 +1,4 @@
 
-#serraTurismo {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    width: 20em;
-}
-
-#onibus {
-    width: 100%;
-    height: 100%; 
-    vertical-align: middle;
-}
-
-.imagemOnibus {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center; 
-}
-
-.titulo {
-    margin: 1em;
-    font-size: 48px;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
