@@ -70,7 +70,7 @@ a {
 
 #imagemFundo {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -80,7 +80,7 @@ a {
     display: flex;
     justify-content: flex-start;
     top: 5em;
-    width: 20em;
+    width: 15%;
     transition: transform 0.2s ease;
 }
 
@@ -88,43 +88,31 @@ a {
     transform: scale(1.1);
 }
 
-.footer_reserveViagem {
-    background-color: #85C5D9;
+.containerFooter {
     position: relative;
+    background-color: #85C5D9;
     width: 100%;
     height: auto;
 }
-.imgFooter_reserveViagem {
-    padding-top: .7%;
-    width: 60%;
-    height: auto;
 
+.imagemFooter {
+    position: static;
+    padding-top: .5%;;
+    width: auto;
+    height: 30%;
 }
 
-.tituloFooter_reserveViagem {
+.tituloFooter {
     position: absolute;
     font-size: 40px;
-    top: 30%;
-    left: 22%;
+    top: 31%;
+    left: 25%;
+    font-size: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
-.botaoReserveViagem{
-    position: absolute;
-    top: 70%;
-    left: 61%;
-    background-color: #3300FF;
-    border-color: #3300FF;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.botaoReserveViagem:hover {
-    background-color: #4c4cff;
-    border-color: #4c4cff;
-}
-.divInputFooter_reserveViagem {
+.divInputFooter {
     width: 20px;
     position: absolute;
     top: 35%;
@@ -134,8 +122,25 @@ a {
     flex-wrap: wrap;
 }
 
-.InputFooter_reserveViagem{
-    margin: 25%;
-    border-radius: 50px;
+.InputFooter {
+    border-radius: 20px;
     padding-left: 40%;
+    margin: 20%;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.botaoReserveViagem{
+    position: absolute;
+    top: 70%;
+    left: 61%;
+    border-radius: 20px;
+    background-color: #3300FF;
+    border-color: #3300FF;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.botaoReserveViagem:hover {
+    background-color: #4c4cff;
+    border-color: #4c4cff;
 }
