@@ -93,11 +93,12 @@
       </nav>
     </header>
     <main>
-      <img
-        id="serraTurismo"
-        alt="Logo Serra Turismo"
-        src="/ProjetoFront-end_grupo4/imagens/logoSerraTurismo.png"
-      />
+      <a href="HomePage.html"
+        ><img
+          id="serraTurismo"
+          alt="Logo Serra Turismo"
+          src="/ProjetoFront-end_grupo4/imagens/logoSerraTurismo.png"
+      /></a>
       <figure class="page">
         <img
           id="serra"
@@ -114,8 +115,10 @@
 
           <form action="" id="formulario" class="formulario">
             <div id="conteudo_formulario">
-              
               <input id="nome" type="text" placeholder="Digite seu nome" />
+            </div>
+            <div id="conteudo_formulario">
+              <input id="email" type="text" placeholder="Digite seu email" />
             </div>
             <div id="conteudo_formulario">
               <input id="CPF" type="text" placeholder="Digite seu cpf" />
@@ -142,18 +145,96 @@
                 <option value="10">Ingressos: 10</option>
               </select>
             </div>
-            <div id="conteudo_formulario">
-              <button type="button" class="btn">Comprar</button>
+          
+            <!-- btn cartão -->
+            <div class="formadepagamento">
+              <button
+                class="btnformadepagamento"
+                type="submit"
+                data-form="cartao"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  height="2em"
+                  width="2em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M928 160H96c-17.7 0-32 14.3-32 32v160h896V192c0-17.7-14.3-32-32-32zM64 832c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V440H64v392zm579-184c0-4.4 3.6-8 8-8h165c4.4 0 8 3.6 8 8v72c0 4.4-3.6 8-8 8H651c-4.4 0-8-3.6-8-8v-72z"
+                  ></path>
+                </svg>
+                <p>Cartão</p>
+              </button>
+              <!-- btn pix -->
+              <button class="btnformadepagamento" type="submit">
+                <svg
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 26 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 20C10.5467 20 10.3334 18.8533 10.3334 18.6667H7.66669C7.66669 19.8933 8.54669 22.0667 11.6667 22.56V24H14.3334V22.56C17 22.1067 18.3334 20.3867 18.3334 18.6667C18.3334 17.1733 17.64 14.6667 13 14.6667C10.3334 14.6667 10.3334 13.8267 10.3334 13.3333C10.3334 12.84 11.2667 12 13 12C14.7334 12 14.8534 12.8533 14.8667 13.3333H17.5334C17.5153 12.425 17.1886 11.5499 16.607 10.8519C16.0254 10.154 15.2235 9.67486 14.3334 9.49333V8H11.6667V9.45333C9.00002 9.89333 7.66669 11.6133 7.66669 13.3333C7.66669 14.8267 8.36002 17.3333 13 17.3333C15.6667 17.3333 15.6667 18.24 15.6667 18.6667C15.6667 19.0933 14.84 20 13 20Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M3.9 0H0V2.9H2.6V27.55C2.6 27.9346 2.73696 28.3034 2.98076 28.5753C3.22456 28.8472 3.55522 29 3.9 29H22.1C22.4448 29 22.7754 28.8472 23.0192 28.5753C23.263 28.3034 23.4 27.9346 23.4 27.55V2.9H26V0H3.9ZM20.8 26.1H5.2V2.9H20.8V26.1Z"
+                    fill="black"
+                  />
+                </svg>
+                <p>Pix</p>
+              </button>
+              <!-- btn boleto -->
+              <button class="btnformadepagamento" type="submit">
+                <svg
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 41 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.55964 0H0.365663C0.164548 0 0 0.138068 0 0.306818V26.6932C0 26.8619 0.164548 27 0.365663 27H2.55964C2.76076 27 2.92531 26.8619 2.92531 26.6932V0.306818C2.92531 0.138068 2.76076 0 2.55964 0ZM40.6343 0H38.4404C38.2392 0 38.0747 0.138068 38.0747 0.306818V26.6932C38.0747 26.8619 38.2392 27 38.4404 27H40.6343C40.8355 27 41 26.8619 41 26.6932V0.306818C41 0.138068 40.8355 0 40.6343 0ZM6.21628 22.0909H11.3356C11.5367 22.0909 11.7012 21.9528 11.7012 21.7841V0.306818C11.7012 0.138068 11.5367 0 11.3356 0H6.21628C6.01516 0 5.85061 0.138068 5.85061 0.306818V21.7841C5.85061 21.9528 6.01516 22.0909 6.21628 22.0909ZM20.8885 22.0909H23.0825C23.2836 22.0909 23.4482 21.9528 23.4482 21.7841V0.306818C23.4482 0.138068 23.2836 0 23.0825 0H20.8885C20.6874 0 20.5229 0.138068 20.5229 0.306818V21.7841C20.5229 21.9528 20.6874 22.0909 20.8885 22.0909ZM26.6477 22.0909H34.7837C34.9848 22.0909 35.1494 21.9528 35.1494 21.7841V0.306818C35.1494 0.138068 34.9848 0 34.7837 0H26.6477C26.4466 0 26.2821 0.138068 26.2821 0.306818V21.7841C26.2821 21.9528 26.4466 22.0909 26.6477 22.0909ZM14.9922 22.0909H17.1862C17.3873 22.0909 17.5518 21.9528 17.5518 21.7841V0.306818C17.5518 0.138068 17.3873 0 17.1862 0H14.9922C14.7911 0 14.6265 0.138068 14.6265 0.306818V21.7841C14.6265 21.9528 14.7911 22.0909 14.9922 22.0909ZM11.3813 24.5455H6.26198C6.06087 24.5455 5.89632 24.6835 5.89632 24.8523V26.6932C5.89632 26.8619 6.06087 27 6.26198 27H11.3813C11.5824 27 11.7469 26.8619 11.7469 26.6932V24.8523C11.7469 24.6835 11.5824 24.5455 11.3813 24.5455ZM23.1282 24.5455H20.9342C20.7331 24.5455 20.5686 24.6835 20.5686 24.8523V26.6932C20.5686 26.8619 20.7331 27 20.9342 27H23.1282C23.3293 27 23.4939 26.8619 23.4939 26.6932V24.8523C23.4939 24.6835 23.3293 24.5455 23.1282 24.5455ZM34.8294 24.5455H26.6934C26.4923 24.5455 26.3278 24.6835 26.3278 24.8523V26.6932C26.3278 26.8619 26.4923 27 26.6934 27H34.8294C35.0305 27 35.1951 26.8619 35.1951 26.6932V24.8523C35.1951 24.6835 35.0305 24.5455 34.8294 24.5455ZM17.2319 24.5455H15.0379C14.8368 24.5455 14.6722 24.6835 14.6722 24.8523V26.6932C14.6722 26.8619 14.8368 27 15.0379 27H17.2319C17.433 27 17.5975 26.8619 17.5975 26.6932V24.8523C17.5975 24.6835 17.433 24.5455 17.2319 24.5455Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <p>Boleto</p>
+              </button>
             </div>
+            <div id="formCartao" >
+              <form action="" id="formCartao" class="formulario" style="display: none;">
+                <div id="conteudo_formulario">
+                    <input id="numeroCartao" type="text" placeholder="Número do Cartão" />
+                </div>
+                <div id="conteudo_formulario">
+                    <input id="nomeCartao" type="text" placeholder="Nome no Cartão" />
+                </div>
+                <div id="conteudo_formulario">
+                    <input id="dataValidade" type="text" placeholder="Data de Validade" />
+                </div>
+                <div id="conteudo_formulario">
+                    <input id="codigoSeguranca" type="text" placeholder="Código de Segurança" />
+                </div>
+            </form></div>
+            <div id="conteudo_formulario">
+              <button type="submit" class="btn">Comprar</button>
+            </div>
+            <script src="PagamentoPage.js"></script>
           </form>
         </div>
       </div>
     </main>
     <footer>
-      <img
-        src="/ProjetoFront-end_grupo4/imagens/logoSerraTurismo.png"
-        alt="Logo Serra Turismo"
-      />
+      <a href="HomePage.html"
+        ><img
+          src="/ProjetoFront-end_grupo4/imagens/logoSerraTurismo.png"
+          alt="Logo Serra Turismo"
+      /></a>
     </footer>
   </body>
 </html>

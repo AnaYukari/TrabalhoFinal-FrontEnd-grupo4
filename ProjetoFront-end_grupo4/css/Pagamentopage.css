@@ -22,6 +22,7 @@
   justify-content: center;
 }
 .container {
+  display: flexbox;
   background-color: #ffffff;
   width: 550px;
   height: 907px;
@@ -30,17 +31,18 @@
 }
 .titulo {
   top: 3em;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 .formulario {
   display: flexbox;
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-  padding: 5em;
+  padding: 0.51em;
   width: o.514cm;
   height: 0.59cm;
-  flex-direction: column;
+
+  /* flex-direction: column; */
 }
 #conteudo_formulario {
   padding: 0.2em;
@@ -51,11 +53,20 @@
 #nome {
   margin: 3%;
   border: 3px solid black;
+  /* margin-bottom: 200px; */
   width: 514px;
   padding: 3%;
   text-align: center;
   border-radius: 12em;
   font-weight: 600;
+}
+#email {
+  margin: 3%;
+  border: 3px solid black;
+  width: 514px;
+  padding: 3%;
+  text-align: center;
+  border-radius: 12em;
 }
 #CPF {
   margin: 3%;
@@ -82,16 +93,85 @@
   border-radius: 12em;
 }
 .btn {
+  margin-left: 23px;
+  margin-top: 600px;
   align-items: center;
   justify-content: center;
-
   background-color: #00ff29;
-  width: 514px;
+  width: 500px;
   color: blue;
-
   border-radius: 12em;
   font-size: 40px;
   color: #ffffff;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
+.btn:hover {
+  transform: scale(1.05);
+}
+.formadepagamento {
+  display: flex;
+  justify-content: space-between;
+}
+.btnformadepagamento {
+  display: flexbox;
+  width: 110px;
+  height: 50px;
+  border-radius: 12em;
+}
+.btnformadepagamento p {
+  /* font-size: 13px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.btnformadepagamento:hover {
+  transform: scale(1.02);
+}
+#pix {
+  padding: 0.3%;
+}
+#formCartao {
+  /* flex-direction:initial; */
+  display: none;
+  /* justify-content:space-between; */
+  /* align-items: center; */
+  
+  /* flex-wrap: nowrap; */
+}
+#numeroCartao{
+  border: 3px solid black;
+  width: 200px;
+  padding: 3%;
+  text-align: center;
+  border-radius: 12em;
+}
+#nomeCartao{
+  border: 3px solid black;
+  width: 200px;
+  padding: 3%;
+  text-align: center;
+  border-radius: 12em;
+}
+#dataValidade{
+  border: 3px solid black;
+  width: 200px;
+  padding: 3%;
+  text-align: center;
+  border-radius: 12em;
+}
+#codigoSeguranca{
+  border: 3px solid black;
+  width: 50px;
+  padding: 3%;
+  text-align: center;
+  border-radius: 12em;
+}
+#formPix {
+  display: none;
+  margin-top: 10px;
+}
+#formBoleto {
+  display: none;
+  margin-top: 10px;
+}
+
