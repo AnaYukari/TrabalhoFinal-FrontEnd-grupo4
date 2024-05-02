@@ -152,8 +152,8 @@ a {
         height: 3.3rem;
     }
 
-    .imagemBanner {
-        width: 0;
+    #imagemFundo {
+        display: none;
     }
 
     .logo {
