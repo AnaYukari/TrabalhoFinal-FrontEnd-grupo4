@@ -13,7 +13,7 @@ main {
 }
 
 .imagemClicavel {
-    margin: 0.5em;
+    margin: 0.5rem;
     transition: transform 0.2s ease;
 }
 
@@ -31,15 +31,15 @@ figure {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2em;
+    margin: 2rem;
 }
 
 .tituloImagem {
     position: absolute;
-    margin: 0.8em;
+    margin: 0.8rem;
     align-self: flex-start;
     z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .imagemBanner {
@@ -66,4 +66,22 @@ figure {
 
 .textoBanner > button {
     position: absolute;
+}
+
+
+
+@media screen and (max-width: 1440px){
+    .imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #grupoImagens {
+        display: flex;
+        justify-content: center;
+    }
+    .imagemLink {
+        max-width: 35rem;
+    }
+
 }
