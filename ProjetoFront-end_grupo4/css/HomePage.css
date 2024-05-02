@@ -45,7 +45,6 @@ figure {
 .imagemBanner {
     display: flex;
     justify-content: center;
-    
 }
 
 .textoBanner {
@@ -54,17 +53,17 @@ figure {
     flex-direction: column;
 }
 
-#textoBanner > h1 {
+#textoBanner>h1 {
     margin: 10%;
     color: black;
 }
 
-#textoBanner > p {
+#textoBanner>p {
     font-size: 150%;
     color: black;
 }
 
-.textoBanner > button {
+.textoBanner>button {
     position: absolute;
 }
 
@@ -78,18 +77,93 @@ figure {
     margin-bottom: 5rem;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
     .imagens {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #grupoImagens {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
+
     .imagemLink {
         max-width: 35rem;
     }
 
+    .imagemClicavel {
+        margin: 0.3rem;
+    }
+
+    .tituloImagem {
+        margin: 0.5rem;
+    }
+
+    .textoBanner {
+        margin: 5%;
+    }
+
+    #textoBanner>h1 {
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+    .imagens {
+        display: none;
+    }
+    #restaurante{
+        width: 20rem;
+        height: 10rem;
+        border-right: 100000rem;
+    }
+    .imagemLink {
+        max-width: 15rem;
+    }
+    .imagemClicavel {
+        margin: 0.2rem;
+        max-width: 5rem;
+        width: 10rem;
+        height: 10rem;
+    }
+    .imagemClicavel > h1 {
+        font-size: 1.5rem;
+    }
+    .tituloImagem {
+        margin: 0.3rem;
+    }
+    #imagemBanner {
+        display: flex;
+        justify-content: center;
+    }
+    #imagemBanner > img {
+        display: none;
+    }
+    .textoBanner {
+        margin: 3%;
+        position: static;
+    }
+    .textoBanner > p {
+        margin: 3%;
+        position: static;
+    }
+    .textoBanner > .botao {
+        width: 10rem;
+        height: 6rem;
+    }
+    .textoBanner > .botao > p > a {
+        font-size: 1.5rem;
+    }
+    #textoBanner>h1 {
+        margin: 3%;
+    }
+    #carrosselFotos {
+        margin-top: 2rem;
+    }
 }

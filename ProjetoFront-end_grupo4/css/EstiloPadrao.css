@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-body{
-    background-color: #BAE5B3 ;
+body {
+    background-color: #BAE5B3;
     text-align: center;
     font-family: 'Poppins';
     height: 100vh;
@@ -27,7 +27,7 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin:  0.1% 0.5% 0.1% 0.5% ;
+    margin: 0.1% 0.5% 0.1% 0.5%;
     background-color: #306725;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 24px;
@@ -42,7 +42,7 @@ body{
     opacity: 100%;
 }
 
-.botao > p {
+.botao>p {
     color: white;
     margin-left: 0.8em;
     margin-top: 0.7em;
@@ -84,7 +84,7 @@ a {
     transition: transform 0.2s ease;
 }
 
-#serraTurismo:hover{
+#serraTurismo:hover {
     transform: scale(1.1);
 }
 
@@ -97,7 +97,8 @@ a {
 
 .imagemFooter {
     position: static;
-    padding-top: .5%;;
+    padding-top: .5%;
+    ;
     width: auto;
     height: 30%;
 }
@@ -130,7 +131,7 @@ a {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.botaoReserveViagem{
+.botaoReserveViagem {
     position: absolute;
     top: 70%;
     left: 61%;
@@ -150,28 +151,58 @@ a {
     .menu {
         height: 3.3rem;
     }
+
     .imagemBanner {
         width: 0;
     }
+
     .logo {
         display: flex;
         justify-content: center;
         padding-top: 2rem;
     }
+
     #serraTurismo {
         position: static;
         width: 20rem;
         transition: transform 0.2s ease;
     }
+
     .botao {
-      width: 5rem;
-      height: 3rem;
+        width: 5rem;
+        height: 3rem;
     }
-    .botao > p{
+
+    .botao>p {
         font-size: 0px;
-      }
-    .titulo{
-      font-size: 18px;
     }
-  
-  }
+
+    .titulo {
+        font-size: 18px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+    }
+    .imagemFooter>img {
+        display: none;
+    }
+
+    .botaoReserveViagem {
+        position: static;
+    }
+
+    .divInputFooter {
+        display: none;
+    }
+    .tituloFooter {
+        position: static;
+    }
+    .InputFooter{
+        display: none;
+    }
+}
