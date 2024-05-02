@@ -83,6 +83,11 @@ border: solid;
 .conteudo_formulario {
   margin: 0.5rem;
 }
+#pixQRCode{
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
 
 
 @media screen and (max-width: 768px) {
