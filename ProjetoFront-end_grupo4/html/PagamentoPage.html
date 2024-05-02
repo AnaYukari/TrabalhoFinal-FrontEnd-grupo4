@@ -117,7 +117,7 @@
               <p style="color: black; font-size: 1.3rem; margin: 0.5rem;">Cartão</p>
             </button>
             <!-- btn pix -->
-            <button class="botao btnformadepagamento" type="submit">
+            <button class="botao btnformadepagamento" type="submit" data-form="pix">
               <svg width="1.25rem" height="1.25rem" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13 20C10.5467 20 10.3334 18.8533 10.3334 18.6667H7.66669C7.66669 19.8933 8.54669 22.0667 11.6667 22.56V24H14.3334V22.56C17 22.1067 18.3334 20.3867 18.3334 18.6667C18.3334 17.1733 17.64 14.6667 13 14.6667C10.3334 14.6667 10.3334 13.8267 10.3334 13.3333C10.3334 12.84 11.2667 12 13 12C14.7334 12 14.8534 12.8533 14.8667 13.3333H17.5334C17.5153 12.425 17.1886 11.5499 16.607 10.8519C16.0254 10.154 15.2235 9.67486 14.3334 9.49333V8H11.6667V9.45333C9.00002 9.89333 7.66669 11.6133 7.66669 13.3333C7.66669 14.8267 8.36002 17.3333 13 17.3333C15.6667 17.3333 15.6667 18.24 15.6667 18.6667C15.6667 19.0933 14.84 20 13 20Z"
@@ -129,7 +129,7 @@
               <p style="color: black; font-size: 1.5rem;">Pix</p>
             </button>
             <!-- btn boleto -->
-            <button class="botao btnformadepagamento" type="submit">
+            <button class="botao btnformadepagamento" type="submit" id="btnBoleto">
               <svg style="margin: 0;" width="1.25rem" height="1.25rem" viewBox="0 0 41 27" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -140,6 +140,7 @@
               <p style="color: black; font-size: 1.5rem;  margin: 0.5rem;">Boleto</p>
             </button>
           </div>
+          <!-- Formulario cartão -->
           <div id="formCartao">
             <form action="" id="formCartao" class="formulario_cartao" style="display: none;">
               <div class="conteudo_formulario">
@@ -156,6 +157,8 @@
               </div>
             </form>
           </div>
+          <!-- Qr code -->
+          <img id="pixQRCode" src="/ProjetoFront-end_grupo4/imagens/qrcode-pix.png" alt="QR Code Pix" style="display: none;">
           <div id="conteudo_formulario">
             <button type="submit" class="btn">Comprar</button>
           </div>
