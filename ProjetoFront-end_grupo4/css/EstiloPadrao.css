@@ -147,7 +147,7 @@ a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     .menu {
         height: 3.3rem;
     }

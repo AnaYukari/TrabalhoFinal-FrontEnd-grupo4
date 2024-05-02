@@ -1,21 +1,32 @@
-
-.container {
+main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 1322px;
-    margin: 5%;
-    margin-left: 18%;
 }
 
-#imagemContainer {
-    width: 636px;
-    border-radius: 10px;
+#serraTurismo {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 5em;
+    right: 85%;
+    width: 15%;
+    transition: transform 0.2s ease;
+}
+.container {
+    display: flex;
+    margin: 5%;
+}
+
+.imagemContainer {
+    width: 39.75rem;
+    border-radius: 0.625rem;
 }
 
 .container > p {
     align-self: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .textoContainer {
@@ -27,6 +38,56 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 1000px){
-    
+
+.logo {
+    align-self: flex-start;
+}
+.imagemDireita{
+    display: flex; 
+    flex-direction: row-reverse;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textoContainer> p::first-letter {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1700px){
+    .imagemEsquerda + .imagemDireita {
+        width: 30rem;
+    }
+    .imagemDireita{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 796px){
+    .imagemEsquerda + .imagemDireita {
+        max-width: 30rem;
+    }
+    .imagemDireita{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+    }
 }
