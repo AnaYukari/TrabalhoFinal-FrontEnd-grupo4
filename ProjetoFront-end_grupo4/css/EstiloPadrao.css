@@ -144,3 +144,34 @@ a {
     background-color: #4c4cff;
     border-color: #4c4cff;
 }
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: 3.3rem;
+    }
+    .imagemBanner {
+        width: 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    #serraTurismo {
+        position: static;
+        width: 20rem;
+        transition: transform 0.2s ease;
+    }
+    .botao {
+      width: 5rem;
+      height: 3rem;
+    }
+    .botao > p{
+        font-size: 0px;
+      }
+    .titulo{
+      font-size: 18px;
+    }
+  
+  }

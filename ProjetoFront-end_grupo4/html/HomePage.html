@@ -110,6 +110,43 @@
             </figure>
 
         </div>
+
+        <div class="carroselSerra">
+            <div id="carrosselFotos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imagens/carrossel/pessoa1.png" class="d-block w-100"
+                            alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/carrossel/pessoa2.png" class="d-block w-100"
+                            alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/carrossel/imagemprocarrosel3.png" class="d-block w-100"
+                            alt="Imagem 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/carrossel/imagemprocarrosel7.png" class="d-block w-100"
+                            alt="Imagem 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/carrossel/imagemprocarrosel8.png" class="d-block w-100"
+                            alt="Imagem 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselFotos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselFotos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+
+
     </main>
     <footer>
         <div class="containerFooter">
@@ -119,15 +156,21 @@
                     Reserve sua Viagem!
                 </h1>
             </div>
-        <div class="divInputFooter">
+            <div class="divInputFooter">
                 <input class="InputFooter" type="text" placeholder="Nome">
                 <input class="InputFooter" type="email" placeholder="Email">
-        </div>
+            </div>
             <button type="button" class="btn btn-primary botaoReserveViagem" id="botaoReserveViagem">
                 Confirmar
             </button>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var meuCarrossel = document.querySelector('#carrosselFotos')
+        var carrosselBootstrap = new bootstrap.Carousel(meuCarrossel)
+    </script>
+
 </body>
 
 </html>

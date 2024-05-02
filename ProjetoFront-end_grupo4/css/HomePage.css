@@ -68,7 +68,15 @@ figure {
     position: absolute;
 }
 
+.carroselSerra {
+    display: flex;
+    justify-content: center;
+}
 
+#carrosselFotos {
+    width: 35rem;
+    margin-bottom: 5rem;
+}
 
 @media screen and (max-width: 1440px){
     .imagens {
