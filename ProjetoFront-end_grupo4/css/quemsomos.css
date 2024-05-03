@@ -1,36 +1,59 @@
-.Kayque{
-    width: 2000px;
-    text-align: center;
-    bottom: 50px;
-    height: 300px;
 
-}
 
-.Enzo{
-    width: 2000px;
-    text-align: center;
-    bottom: 50px;
-    height: 300px;
-}
-
-.Ana{
-    width: 2000px;
-    text-align: center;
-    bottom: 50px;
-    height: 300px;
-}
-
-.Miguel{
-    width: 2000px;
-    text-align: center;
-    bottom: 50px;
-    height: 300px;
+.box {
+    margin: 2%;
+    transition: opacity 1s ease;
 }
 
 
-.Mateus{
-    width: 2000px;
-    text-align: center;
-    bottom: 50px;
-    height: 300px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container:hover > :not(:hover) {
+    opacity: 0.4;
+}
+
+
+.imagem {
+    width: 100%;
+}
+
+.botaoFoto {
+    border: none;
+    background-color: #BAE5B3;
+}
+.informacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em; /* Ajuste o tamanho do texto conforme necessário */
+}
+
+.logoFooterDiv {
+    justify-content: center;
+    position: relative;
+}
+
+.logoFooter {
+    margin-top: -30px;
+    margin-bottom: -40px;
+    width: 300px;
+}
+
+h4 {
+    font-weight: 400;
+    color: black ;
+    font-style: italic;
+}
+
+.footerDiv {
+    padding: 6px;
+    background-color: #1C6810;
+    color: aliceblue;
 }
