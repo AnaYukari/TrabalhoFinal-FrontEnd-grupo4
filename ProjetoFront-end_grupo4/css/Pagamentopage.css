@@ -104,4 +104,7 @@ border: solid;
   .titulo{
     font-size: 18px;
   }
+  #imageQrCode {
+    max-width: 95%;
+  }
 }

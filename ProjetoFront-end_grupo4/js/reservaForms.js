@@ -30,6 +30,7 @@ botaoPix.onclick = () => {
     let qrcode = document.createElement("img");
 
     qrcode.setAttribute("src", "../imagens/qrcode-pix.png");
+    qrcode.setAttribute("id", "imageQrCode");
 
     let inputInvisivel = document.createElement("input");
 
