@@ -52,8 +52,18 @@ h4 {
     font-style: italic;
 }
 
-.footerDiv {
-    padding: 6px;
+footer {
     background-color: #1C6810;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     color: aliceblue;
 }
+
+
+
+
