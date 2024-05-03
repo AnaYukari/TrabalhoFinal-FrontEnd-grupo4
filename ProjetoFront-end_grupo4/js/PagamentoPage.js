@@ -1,6 +1,6 @@
 function toggleContent(formaPagamento) {
   let forms = {
-    "cartao": document.getElementById("formCartao"),
+    "cartao": document.getElementsByClassName("formCartao"),
     "pix": document.getElementById("pixQRCode")
   };
 
